@@ -61,6 +61,13 @@ php -S localhost:8000
 
 Then visit `http://localhost:8000` in your browser.
 
+### Option 3: One-Command Open (Easiest)
+Run this command and the site opens automatically (it picks a free port if 8000 is busy):
+
+```bash
+npm run run
+```
+
 ## 📁 File Structure
 
 ```

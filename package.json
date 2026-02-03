@@ -1,0 +1,8 @@
+{
+  "name": "hidayah-media-website",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "run": "python3 scripts/serve.py"
+  }
+}

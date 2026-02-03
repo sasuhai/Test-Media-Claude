@@ -344,7 +344,10 @@ function renderTeamEditor() {
         card.className = 'admin-card';
         card.innerHTML = `
             <header>
-                <h3>Team Member ${index + 1}</h3>
+                <div class="admin-card-title">
+                    <span class="drag-handle" data-drag-handle="team" aria-label="Drag to reorder">Move</span>
+                    <h3>Team Member ${index + 1}</h3>
+                </div>
                 <button class="btn btn-outline btn-small" type="button" data-remove-team="${index}">Delete</button>
             </header>
             <label>
@@ -556,15 +559,18 @@ function enableDragReorder(container, items, renderFn) {
     let draggedIndex = null;
 
     container.querySelectorAll('.admin-card').forEach((card, index) => {
-        card.setAttribute('draggable', 'true');
+        const handle = card.querySelector('[data-drag-handle]');
+        const dragTarget = handle || card;
+        dragTarget.setAttribute('draggable', 'true');
 
-        card.addEventListener('dragstart', (event) => {
+        dragTarget.addEventListener('dragstart', (event) => {
             draggedIndex = index;
             card.classList.add('dragging');
             event.dataTransfer.effectAllowed = 'move';
+            event.dataTransfer.setData('text/plain', '');
         });
 
-        card.addEventListener('dragend', () => {
+        dragTarget.addEventListener('dragend', () => {
             draggedIndex = null;
             card.classList.remove('dragging');
             container.querySelectorAll('.admin-card').forEach(item => item.classList.remove('drag-over'));
