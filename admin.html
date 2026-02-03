@@ -26,7 +26,7 @@
         <div class="container admin-header-inner">
             <div>
                 <h1 class="admin-title">Media Team Admin</h1>
-                <p class="admin-subtitle">Edit hero, about, and services content. Changes save to this browser.</p>
+                <p class="admin-subtitle">Edit hero, about, services, portfolio, and team content. Drafts save to this browser only.</p>
             </div>
             <div class="admin-actions">
                 <button class="btn btn-outline" id="resetDefaults">Reset to Defaults</button>
@@ -35,11 +35,23 @@
                 <button class="btn btn-outline" id="exportContent">Export JSON</button>
                 <button class="btn btn-outline" id="saveContent">Save Draft</button>
                 <button class="btn btn-primary" id="publishContent">Publish Live</button>
+                <span class="publish-warning">Not supported on GitHub Pages</span>
             </div>
         </div>
     </header>
 
     <main class="admin-main container">
+
+        <section class="admin-section admin-info">
+            <h2>Publishing Workflow (GitHub Pages)</h2>
+            <ol class="admin-steps">
+                <li>Edit your content on this page.</li>
+                <li>Click <strong>Export JSON</strong> to download <code>content.json</code>.</li>
+                <li>Replace the <code>content.json</code> file in your GitHub repo.</li>
+                <li>Commit and push to GitHub — your live site updates automatically.</li>
+            </ol>
+            <p class="admin-note">GitHub Pages does not support live publishing from this panel. Use the export + commit workflow above.</p>
+        </section>
         <section class="admin-section">
             <h2>Hero Section</h2>
             <div class="admin-grid">

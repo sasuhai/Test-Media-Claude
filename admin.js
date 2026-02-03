@@ -411,6 +411,7 @@ function bindActions() {
     const saveButton = document.getElementById('saveContent');
     const resetButton = document.getElementById('resetDefaults');
     const exportButton = document.getElementById('exportContent');
+    const reminder = document.getElementById('adminReminder');
     const importInput = document.getElementById('importContent');
     const publishButton = document.getElementById('publishContent');
 
@@ -444,6 +445,10 @@ function bindActions() {
             anchor.click();
             document.body.removeChild(anchor);
             URL.revokeObjectURL(url);
+            if (reminder) {
+                reminder.classList.add('visible');
+                reminder.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
         });
     }
 
@@ -471,7 +476,7 @@ function bindActions() {
             } catch (error) {
                 publishButton.textContent = 'Publish Live';
                 publishButton.disabled = false;
-                alert('Publish failed. Please make sure the local server is running.');
+                alert('Publish failed. Please make sure Firebase Functions are deployed.');
             }
         });
     }
