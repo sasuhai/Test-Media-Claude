@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "badge": "Hidayah Centre Foundation KL• Media Team",
+    "title": "Telling Stories That Inspire Hidayah",
+    "subtitle": "We craft photography, film, design, and digital experiences that amplify da'wah and community impact across Kuala Lumpur.",
+    "primaryCtaText": "Explore Our Work",
+    "primaryCtaHref": "#portfolio",
+    "secondaryCtaText": "Join Our Media Team",
+    "secondaryCtaHref": "#contact",
+    "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    "backgroundUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80",
+    "cardTopTitle": "Live Coverage",
+    "cardTopSubtitle": "Events • Community • Dawah",
+    "cardBottomTitle": "Creative Studio",
+    "cardBottomSubtitle": "Film • Design • Digital"
+  },
+  "about": {
+    "lead": "We are the creative heart of Hidayah Centre Foundation, dedicated to sharing the transformative message of Islam through compelling visual storytelling and digital media.",
+    "body1": "Our mission is to support da'wah and community outreach by creating authentic, impactful content that resonates with hearts and minds. From capturing meaningful moments at community events to producing educational videos and managing our digital presence, we strive to tell stories that inspire guidance, knowledge, and positive change.",
+    "body2": "Based in Kuala Lumpur, our team combines professional media expertise with a deep commitment to Islamic values, ensuring every piece of content we create reflects the dignity, compassion, and purpose of our faith.",
+    "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80"
+  },
+  "services": [
+    {
+      "icon": "📸",
+      "title": "Photography & Event Coverage",
+      "description": "Capturing the essence of our programs, events, and community moments with professional photography that tells authentic stories."
+    },
+    {
+      "icon": "🎥",
+      "title": "Video Production & Editing",
+      "description": "Creating engaging video content from educational series to documentary-style coverage that inspires and educates."
+    },
+    {
+      "icon": "🎨",
+      "title": "Graphic Design & Visual Identity",
+      "description": "Designing beautiful, purposeful graphics that maintain brand consistency and communicate our message effectively."
+    },
+    {
+      "icon": "📱",
+      "title": "Social Media Management",
+      "description": "Building meaningful connections through strategic social media presence and community engagement."
+    },
+    {
+      "icon": "🌐",
+      "title": "Website & Digital Content",
+      "description": "Developing and maintaining digital platforms that serve as gateways to knowledge and community resources."
+    },
+    {
+      "icon": "🎞️",
+      "title": "Campaign & Storytelling Content",
+      "description": "Crafting compelling narratives for campaigns that drive awareness, engagement, and positive action."
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Ramadan Community Iftar",
+      "category": "events",
+      "image": "https://picsum.photos/seed/hidayah-event-1/1200/900",
+      "description": "Annual community gathering bringing together families for breaking fast"
+    },
+    {
+      "title": "Islamic Education Campaign",
+      "category": "campaigns",
+      "image": "https://picsum.photos/seed/hidayah-campaign-1/1200/900",
+      "description": "Digital campaign promoting Quranic studies and Islamic knowledge"
+    },
+    {
+      "title": "Youth Workshop Series",
+      "category": "videos",
+      "image": "https://picsum.photos/seed/hidayah-video-1/1200/900",
+      "description": "Video documentation of youth empowerment workshops"
+    },
+    {
+      "title": "Charity Drive Poster",
+      "category": "designs",
+      "image": "https://picsum.photos/seed/hidayah-design-1/1200/900",
+      "description": "Visual campaign for community charity initiative"
+    }
+  ],
+  "team": [
+    {
+      "name": "Ahmad Bin Ibrahim",
+      "role": "Creative Director",
+      "photo": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "name": "Fatimah Hassani",
+      "role": "Lead Videographer",
+      "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "name": "Yusuf Rahmani",
+      "role": "Graphic Designer",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "name": "Aisha Zahra",
+      "role": "Content Strategist",
+      "photo": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=900&q=80"
+    }
+  ]
+}

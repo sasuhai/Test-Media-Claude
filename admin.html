@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Hidayah Centre Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-gate" id="adminGate">
+        <div class="admin-gate-card">
+            <h1>Admin Access</h1>
+            <p>Enter the admin password to edit content.</p>
+            <input type="password" id="adminPassword" placeholder="Password">
+            <button class="btn btn-primary" id="adminUnlock">Unlock</button>
+            <p class="admin-hint">Default password: <strong>hidayah-admin</strong></p>
+            <p class="admin-error" id="adminError" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <header class="admin-header">
+        <div class="container admin-header-inner">
+            <div>
+                <h1 class="admin-title">Media Team Admin</h1>
+                <p class="admin-subtitle">Edit hero, about, and services content. Changes save to this browser.</p>
+            </div>
+            <div class="admin-actions">
+                <button class="btn btn-outline" id="resetDefaults">Reset to Defaults</button>
+                <label class="btn btn-outline" for="importContent">Import JSON</label>
+                <input type="file" id="importContent" accept="application/json" hidden>
+                <button class="btn btn-outline" id="exportContent">Export JSON</button>
+                <button class="btn btn-outline" id="saveContent">Save Draft</button>
+                <button class="btn btn-primary" id="publishContent">Publish Live</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-main container">
+        <section class="admin-section">
+            <h2>Hero Section</h2>
+            <div class="admin-grid">
+                <label>
+                    Badge Text
+                    <input type="text" id="heroBadgeInput">
+                </label>
+                <label>
+                    Hero Title
+                    <input type="text" id="heroTitleInput">
+                </label>
+                <label>
+                    Hero Subtitle
+                    <textarea id="heroSubtitleInput" rows="3"></textarea>
+                </label>
+                <label>
+                    Primary CTA Text
+                    <input type="text" id="heroPrimaryCtaText">
+                </label>
+                <label>
+                    Primary CTA Link
+                    <input type="text" id="heroPrimaryCtaHref">
+                </label>
+                <label>
+                    Secondary CTA Text
+                    <input type="text" id="heroSecondaryCtaText">
+                </label>
+                <label>
+                    Secondary CTA Link
+                    <input type="text" id="heroSecondaryCtaHref">
+                </label>
+                <label>
+                    Hero Image
+                    <input type="file" id="heroImageUpload" accept="image/*">
+                    <div class="image-preview" id="heroImagePreview"></div>
+                    <button class="btn btn-outline btn-small" type="button" data-reset="heroImage">Remove Image</button>
+                </label>
+                <label>
+                    Hero Background Image
+                    <input type="file" id="heroBgUpload" accept="image/*">
+                    <div class="image-preview" id="heroBgPreview"></div>
+                    <button class="btn btn-outline btn-small" type="button" data-reset="heroBackground">Remove Image</button>
+                </label>
+                <label>
+                    Card Top Title
+                    <input type="text" id="heroCardTopTitleInput">
+                </label>
+                <label>
+                    Card Top Subtitle
+                    <input type="text" id="heroCardTopSubtitleInput">
+                </label>
+                <label>
+                    Card Bottom Title
+                    <input type="text" id="heroCardBottomTitleInput">
+                </label>
+                <label>
+                    Card Bottom Subtitle
+                    <input type="text" id="heroCardBottomSubtitleInput">
+                </label>
+            </div>
+        </section>
+
+        <section class="admin-section">
+            <h2>About Section</h2>
+            <div class="admin-grid">
+                <label>
+                    Lead Text
+                    <textarea id="aboutLeadInput" rows="3"></textarea>
+                </label>
+                <label>
+                    Body Paragraph 1
+                    <textarea id="aboutBody1Input" rows="4"></textarea>
+                </label>
+                <label>
+                    Body Paragraph 2
+                    <textarea id="aboutBody2Input" rows="4"></textarea>
+                </label>
+                <label>
+                    About Image
+                    <input type="file" id="aboutImageUpload" accept="image/*">
+                    <div class="image-preview" id="aboutImagePreview"></div>
+                    <button class="btn btn-outline btn-small" type="button" data-reset="aboutImage">Remove Image</button>
+                </label>
+            </div>
+        </section>
+
+        <section class="admin-section">
+            <h2>Services Section</h2>
+            <div class="admin-services" id="servicesEditor"></div>
+        </section>
+
+        <section class="admin-section">
+            <div class="admin-section-header">
+                <h2>Our Work (Portfolio)</h2>
+                <button class="btn btn-outline btn-small" id="addPortfolioItem">Add Item</button>
+            </div>
+            <div class="admin-collection" id="portfolioEditor"></div>
+        </section>
+
+        <section class="admin-section">
+            <div class="admin-section-header">
+                <h2>Meet the Team</h2>
+                <button class="btn btn-outline btn-small" id="addTeamMember">Add Member</button>
+            </div>
+            <div class="admin-collection" id="teamEditor"></div>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
